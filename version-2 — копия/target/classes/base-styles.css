@@ -1,0 +1,170 @@
+/* Основные стили */
+.root {
+    -fx-main-bg-color: #F5F5F5; /* Светлый серый фон */
+    -fx-font-family: "Arial", sans-serif;
+}
+
+/* Кнопки */
+.button {
+    -fx-border-style: solid;
+    -fx-border-width: 0.8px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #4A90E2; /* Синий */
+    -fx-background-color: #FFFFFF; /* Белый фон кнопок */
+    -fx-padding: 8px 16px;
+    -fx-text-fill: #4A90E2; /* Синий текст */
+    -fx-font-size: 11.2px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 4.8, 0, 0, 3.2);
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: #4A90E2; /* Синий */
+    -fx-border-color: #4A90E2;
+    -fx-text-fill: #FFFFFF; /* Белый текст */
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Поля ввода */
+.text-field {
+    -fx-border-style: solid;
+    -fx-border-width: 0.8px;
+    -fx-border-color: #4A90E2; /* Синий */
+    -fx-background-color: #FFFFFF; /* Белый фон */
+    -fx-padding: 6.4px 9.6px;
+    -fx-font-size: 11.2px;
+    -fx-text-fill: #333333; /* Темный текст */
+    -fx-focus-color: #4A90E2; /* Синий при фокусе */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 3.2, 0, 0, 1.6);
+}
+
+.text-field:focused {
+    -fx-border-color: #4A90E2; /* Синий */
+}
+
+/* Заголовки */
+.header-label {
+    -fx-font-size: 17.6px;
+    -fx-font-weight: bold;
+    -fx-background-color: #4A90E2; /* Синий */
+    -fx-text-fill: #FFFFFF; /* Белый текст */
+    -fx-padding: 9.6px 12.8px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 4.8, 0, 0, 3.2);
+}
+
+/* Списки */
+.list-view {
+    -fx-background-color: #FFFFFF; /* Белый фон */
+    -fx-border-color: #4A90E2; /* Синий */
+    -fx-border-width: 0.8px;
+    -fx-padding: 6.4px;
+    -fx-border-radius: 5px;
+}
+
+.list-cell {
+    -fx-font-size: 11.2px;
+    -fx-text-fill: #333333; /* Темный текст */
+    -fx-background-color: #F0F0F0; /* Светлый фон элементов списка */
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+}
+
+.list-cell:hover {
+    -fx-background-color: #4A90E2; /* Синий при наведении */
+    -fx-text-fill: #FFFFFF; /* Белый текст */
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Панель прокрутки */
+.scroll-bar {
+    -fx-background-color: #F5F5F5; /* Светлый фон */
+    -fx-pref-width: 4.8px;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #E0E0E0; /* Светло-серый */
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #4A90E2; /* Синий */
+}
+
+/* Ссылки */
+.hyperlink {
+    -fx-text-fill: #4A90E2; /* Синий */
+    -fx-font-size: 11.2px;
+    -fx-font-weight: bold;
+    -fx-padding: 3.2px 6.4px;
+    -fx-cursor: hand;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #333333; /* Темный текст при наведении */
+}
+
+/* Прогресс-бары */
+.progress-bar {
+    -fx-accent: #4A90E2; /* Синий */
+    -fx-pref-height: 11.2px;
+    -fx-background-color: #F5F5F5; /* Светлый фон */
+}
+
+/* Фильтры */
+.combo-box {
+    -fx-background-color: #FFFFFF; /* Белый фон */
+    -fx-border-color: #4A90E2; /* Синий */
+    -fx-border-width: 0.8px;
+    -fx-font-size: 11.2px;
+    -fx-padding: 6.4px 9.6px;
+    -fx-text-fill: #333333; /* Темный текст */
+    -fx-focus-color: #4A90E2; /* Синий при фокусе */
+}
+
+/* Всплывающие подсказки */
+.tooltip {
+    -fx-background-color: #4A90E2; /* Синий */
+    -fx-text-fill: #FFFFFF; /* Белый */
+    -fx-font-size: 11.2px;
+    -fx-padding: 6.4px;
+    -fx-border-radius: 5px;
+}
+
+/* Разделители */
+.separator {
+    -fx-background-color: #4A90E2; /* Синий */
+    -fx-pref-height: 1.6px;
+}
+
+/* Переключатели */
+.toggle-button {
+    -fx-background-color: #4A90E2; /* Синий */
+    -fx-text-fill: #FFFFFF; /* Белый */
+    -fx-font-size: 11.2px;
+    -fx-border-radius: 8px;
+    -fx-padding: 8px 16px;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #333333; /* Темный */
+}
+
+.toggle-button:hover {
+    -fx-background-color: #333333; /* Темный */
+}
+
+/* Радио кнопки */
+.radio-button {
+    -fx-font-size: 11.2px;
+    -fx-text-fill: #4A90E2; /* Синий */
+    -fx-padding: 6.4px;
+}
+
+.radio-button:hover {
+    -fx-background-color: #F0F0F0; /* Светлый */
+    -fx-text-fill: #333333; /* Темный */
+}
